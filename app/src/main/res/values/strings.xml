@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">The Next</string>
+
+    //Load screen
+    <string name="title">Welcome to the Future</string>
+    <string name="swipe">Swipe\n>>></string>
+
+    //Randomizer
+    <string name="the_next">The Next</string>
+    <string name="big_tech_thing">______________:</string>
 </resources>
