@@ -8,4 +8,5 @@
     //Randomizer
     <string name="the_next">The Next</string>
     <string name="big_tech_thing">______________:</string>
+    <string name="randomize_button">Randomize</string>
 </resources>
