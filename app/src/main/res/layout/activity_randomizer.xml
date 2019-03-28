@@ -8,24 +8,25 @@
 
     <TextView
         android:id="@+id/the_next"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="109dp"
         android:layout_marginTop="42dp"
+        android:gravity="center"
         android:text="@string/the_next"
         android:textSize="@dimen/sub_title"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/big_tech_thing"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
         android:layout_marginTop="52dp"
         android:gravity="center"
         android:text="@string/big_tech_thing"
         android:textSize="@dimen/sub_title"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/the_next" />
 
@@ -40,12 +41,15 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/noun"
-        android:layout_width="wrap_content"
+        android:id="@+id/the_thing"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="21dp"
-        android:layout_marginTop="264dp"
-        android:text=""
+        android:layout_marginTop="220dp"
+        android:text="@string/the_thing"
+        android:gravity="center"
+        android:textSize="@dimen/the_thing_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
