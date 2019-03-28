@@ -3,7 +3,7 @@
 
     //Load screen
     <string name="title">Welcome to the Future</string>
-    <string name="swipe">Swipe\n>>></string>
+    <string name="swipe">Tap to begin</string>
 
     //Randomizer
     <string name="the_next">The Next</string>
@@ -11,6 +11,7 @@
     <string name="randomize_button">Randomize</string>
     <string name="colon">:</string>
     <string name="the_thing">%s %s %s, written in %s for %s</string>
+    <string name="the_thing_default">A ________ ________ ________, written in ________ for ________</string>
 
     <string-array name="big_tech_things">
         <item>Facebook</item>
@@ -23,12 +24,18 @@
         <item>Linux</item>
         <item>iPhone</item>
         <item>Uber</item>
+        <item>Tinder</item>
+        <item>Paypal</item>
+        <item>Vine</item>
+        <item>Twitter</item>
+        <item>Slack</item>
+        <item>Chrome</item>
     </string-array>
 
     <string-array name="adjectives">
         <item>An inclusive</item>
         <item>A progressive</item>
-        <item>A smart</item>
+        <item>An analytic</item>
         <item>A collaborative</item>
         <item>A diverse</item>
         <item>An inquisitive</item>
@@ -40,11 +47,15 @@
         <item>A stable</item>
         <item>A well-documented</item>
         <item>An experimental</item>
+        <item>A thrilling</item>
+        <item>A cutting-edge</item>
+        <item>A global</item>
+        <item>An entrepreneurial</item>
     </string-array>
 
     <string-array name="buzzwords">
         <item>IOT</item>
-        <item>zetabyte</item>
+        <item>zetabyte-capable</item>
         <item>big data</item>
         <item>net neutrality</item>
         <item>deep learning</item>
@@ -54,13 +65,18 @@
         <item>blockchain</item>
         <item>data mining</item>
         <item>cloud-based</item>
-        <item>small data</item>
-        <item>adequate data</item>
+        <item>small-data</item>
         <item>machine learning</item>
         <item>containerized</item>
         <item>automated</item>
         <item>voice recognition</item>
         <item>open source</item>
+        <item>agile</item>
+        <item>quantum</item>
+        <item>distributed</item>
+        <item>feature-driven</item>
+        <item>scalable</item>
+        <item>predictive</item>
     </string-array>
 
     <string-array name="nouns">
@@ -75,6 +91,11 @@
         <item>browser</item>
         <item>website</item>
         <item>app</item>
+        <item>web app</item>
+        <item>tool</item>
+        <item>social media platform</item>
+        <item>solution</item>
+        <item>database</item>
     </string-array>
 
     <string-array name="languages">
@@ -90,13 +111,13 @@
         <item>R</item>
         <item>PHP</item>
         <item>C++</item>
-        <item>Assembly Language</item>
-        <item>Binary</item>
+        <item>assembly language</item>
+        <item>binary</item>
     </string-array>
 
     <string-array name="platforms">
         <item>robots</item>
-        <item>Raspberry Pis</item>
+        <item>Raspberry Pi</item>
         <item>tablets</item>
         <item>PCs</item>
         <item>MacOS</item>
@@ -105,7 +126,11 @@
         <item>Samsung smart fridges</item>
         <item>self driving cars</item>
         <item>smart TVs</item>
-        <item>Amazon Echos</item>
+        <item>Google home devices</item>
+        <item>Kindles</item>
+        <item>smart watches</item>
+        <item>the Oculus rift</item>
+        <item>Playstation</item>
     </string-array>
 
 </resources>
