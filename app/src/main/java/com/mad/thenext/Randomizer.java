@@ -1,5 +1,8 @@
 package com.mad.thenext;
 
+import android.app.SearchManager;
+import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -23,6 +26,7 @@ public class Randomizer extends AppCompatActivity {
     TextView big_tech_thing_text;
     TextView the_thing;
     String message;
+    String buzzword;
 
     final Random rand = new Random();
 
@@ -47,7 +51,7 @@ public class Randomizer extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String adjective = adjectives[rand.nextInt(adjectives.length)];
-                String buzzword = buzzwords[rand.nextInt(buzzwords.length)];
+                buzzword = buzzwords[rand.nextInt(buzzwords.length)];
                 String noun = nouns[rand.nextInt(nouns.length)];
                 String language = languages[rand.nextInt(languages.length)];
                 String platform = platforms[rand.nextInt(platforms.length)];
@@ -61,7 +65,15 @@ public class Randomizer extends AppCompatActivity {
 
             }
         });
-
-
+        the_thing.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_WEB_SEARCH);
+                intent.putExtra(SearchManager.QUERY, getResources().getString(R.string.memes, buzzword)); // query contains search string
+                startActivity(intent);
+//                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.google.com"));
+//                startActivity(browserIntent);
+            }
+        });
     }
 }
