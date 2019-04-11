@@ -13,6 +13,8 @@
     <string name="the_thing">%s %s %s, written in %s for %s</string>
     <string name="the_thing_default">A ________ ________ ________, written in ________ for ________</string>
 
+    <string name="memes">%s memes</string>
+
     <string-array name="big_tech_things">
         <item>Facebook</item>
         <item>Instagram</item>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="title_size">80sp</dimen>
-    <dimen name="sub_title">40sp</dimen>
+    <dimen name="sub_title">50sp</dimen>
+    <dimen name="large_text_size">35sp</dimen>
     <dimen name="medium_text_size">25sp</dimen>
 </resources>
