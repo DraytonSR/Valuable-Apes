@@ -32,14 +32,17 @@
 
     <Button
         android:id="@+id/randomize"
-        android:layout_width="177dp"
-        android:layout_height="114dp"
-        android:layout_marginBottom="101dp"
-        android:text="@string/randomize_button"
-        android:textSize="@dimen/medium_text_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"
         android:background="@drawable/round_btn"
+        android:text="@string/randomize_button"
+        android:textColor="@color/highlight"
+        android:textSize="@dimen/medium_text_size"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -47,13 +50,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="220dp"
-        android:text="@string/the_thing_default"
-        android:gravity="center"
-        android:textSize="@dimen/large_text_size"
-        android:paddingStart="20dp"
-        android:paddingEnd="20dp"
         android:clickable="true"
         android:focusable="true"
+        android:gravity="center"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:text="@string/the_thing_default"
+        android:textSize="@dimen/large_text_size"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
