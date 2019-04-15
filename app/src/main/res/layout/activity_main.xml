@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/background_pic">
 
     <TextView
         android:id="@+id/title"
@@ -24,8 +25,8 @@
         android:id="@+id/swipe"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="92dp"
-        android:layout_marginTop="72dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="80dp"
         android:gravity="center"
         android:text="@string/swipe"
         android:textSize="@dimen/sub_title"
