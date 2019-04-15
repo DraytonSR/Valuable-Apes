@@ -75,5 +75,22 @@ public class Randomizer extends AppCompatActivity {
 //                startActivity(browserIntent);
             }
         });
+        the_thing.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_WEB_SEARCH);
+                intent.putExtra(SearchManager.QUERY, getResources().getString(R.string.jobs, buzzword)); // query contains search string
+                startActivity(intent);
+                return false;
+            }
+        });
+        big_tech_thing_text.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_WEB_SEARCH);
+                intent.putExtra(SearchManager.QUERY, getResources().getString(R.string.news, big_tech_thing_text.getText().toString())); // query contains search string
+                startActivity(intent);
+            }
+        });
     }
 }
