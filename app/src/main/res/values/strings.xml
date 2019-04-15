@@ -14,6 +14,7 @@
     <string name="the_thing_default">A ________ ________ ________, written in ________ for ________</string>
 
     <string name="memes">%s memes</string>
+    <string name="jobs">%s jobs</string>
 
     <string-array name="big_tech_things">
         <item>Facebook</item>
