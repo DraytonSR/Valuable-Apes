@@ -17,124 +17,124 @@
     <string name="jobs">%s jobs</string>
     <string name="news">%s news</string>
 
-    <string-array name="big_tech_things">
-        <item>Facebook</item>
-        <item>Instagram</item>
-        <item>YouTube</item>
-        <item>SnapChat</item>
-        <item>Reddit</item>
-        <item>MySpace</item>
-        <item>Steam</item>
-        <item>Linux</item>
-        <item>iPhone</item>
-        <item>Uber</item>
-        <item>Tinder</item>
-        <item>Paypal</item>
-        <item>Vine</item>
-        <item>Twitter</item>
-        <item>Slack</item>
-        <item>Chrome</item>
-    </string-array>
+    <!--<string-array name="big_tech_things">-->
+        <!--<item>Facebook</item>-->
+        <!--<item>Instagram</item>-->
+        <!--<item>YouTube</item>-->
+        <!--<item>SnapChat</item>-->
+        <!--<item>Reddit</item>-->
+        <!--<item>MySpace</item>-->
+        <!--<item>Steam</item>-->
+        <!--<item>Linux</item>-->
+        <!--<item>iPhone</item>-->
+        <!--<item>Uber</item>-->
+        <!--<item>Tinder</item>-->
+        <!--<item>Paypal</item>-->
+        <!--<item>Vine</item>-->
+        <!--<item>Twitter</item>-->
+        <!--<item>Slack</item>-->
+        <!--<item>Chrome</item>-->
+    <!--</string-array>-->
 
-    <string-array name="adjectives">
-        <item>An inclusive</item>
-        <item>A progressive</item>
-        <item>An analytic</item>
-        <item>A collaborative</item>
-        <item>A diverse</item>
-        <item>An inquisitive</item>
-        <item>An immersive</item>
-        <item>An innovative</item>
-        <item>An intuitive </item>
-        <item>An elaborate</item>
-        <item>An in-depth</item>
-        <item>A stable</item>
-        <item>A well-documented</item>
-        <item>An experimental</item>
-        <item>A thrilling</item>
-        <item>A cutting-edge</item>
-        <item>A global</item>
-        <item>An entrepreneurial</item>
-    </string-array>
+    <!--<string-array name="adjectives">-->
+        <!--<item>An inclusive</item>-->
+        <!--<item>A progressive</item>-->
+        <!--<item>An analytic</item>-->
+        <!--<item>A collaborative</item>-->
+        <!--<item>A diverse</item>-->
+        <!--<item>An inquisitive</item>-->
+        <!--<item>An immersive</item>-->
+        <!--<item>An innovative</item>-->
+        <!--<item>An intuitive </item>-->
+        <!--<item>An elaborate</item>-->
+        <!--<item>An in-depth</item>-->
+        <!--<item>A stable</item>-->
+        <!--<item>A well-documented</item>-->
+        <!--<item>An experimental</item>-->
+        <!--<item>A thrilling</item>-->
+        <!--<item>A cutting-edge</item>-->
+        <!--<item>A global</item>-->
+        <!--<item>An entrepreneurial</item>-->
+    <!--</string-array>-->
 
-    <string-array name="buzzwords">
-        <item>IOT</item>
-        <item>zetabyte-capable</item>
-        <item>big data</item>
-        <item>net neutrality</item>
-        <item>deep learning</item>
-        <item>natural language processing</item>
-        <item>AI</item>
-        <item>VR</item>
-        <item>blockchain</item>
-        <item>data mining</item>
-        <item>cloud-based</item>
-        <item>small-data</item>
-        <item>machine learning</item>
-        <item>containerized</item>
-        <item>automated</item>
-        <item>voice recognition</item>
-        <item>open source</item>
-        <item>agile</item>
-        <item>quantum</item>
-        <item>distributed</item>
-        <item>feature-driven</item>
-        <item>scalable</item>
-        <item>predictive</item>
-    </string-array>
+    <!--<string-array name="buzzwords">-->
+        <!--<item>IOT</item>-->
+        <!--<item>zetabyte-capable</item>-->
+        <!--<item>big data</item>-->
+        <!--<item>net neutrality</item>-->
+        <!--<item>deep learning</item>-->
+        <!--<item>natural language processing</item>-->
+        <!--<item>AI</item>-->
+        <!--<item>VR</item>-->
+        <!--<item>blockchain</item>-->
+        <!--<item>data mining</item>-->
+        <!--<item>cloud-based</item>-->
+        <!--<item>small-data</item>-->
+        <!--<item>machine learning</item>-->
+        <!--<item>containerized</item>-->
+        <!--<item>automated</item>-->
+        <!--<item>voice recognition</item>-->
+        <!--<item>open source</item>-->
+        <!--<item>agile</item>-->
+        <!--<item>quantum</item>-->
+        <!--<item>distributed</item>-->
+        <!--<item>feature-driven</item>-->
+        <!--<item>scalable</item>-->
+        <!--<item>predictive</item>-->
+    <!--</string-array>-->
 
-    <string-array name="nouns">
-        <item>algorithm</item>
-        <item>javascript framework</item>
-        <item>chat bot</item>
-        <item>server</item>
-        <item>search engine</item>
-        <item>neural network</item>
-        <item>system</item>
-        <item>operating system</item>
-        <item>browser</item>
-        <item>website</item>
-        <item>app</item>
-        <item>web app</item>
-        <item>tool</item>
-        <item>social media platform</item>
-        <item>solution</item>
-        <item>database</item>
-    </string-array>
+    <!--<string-array name="nouns">-->
+        <!--<item>algorithm</item>-->
+        <!--<item>javascript framework</item>-->
+        <!--<item>chat bot</item>-->
+        <!--<item>server</item>-->
+        <!--<item>search engine</item>-->
+        <!--<item>neural network</item>-->
+        <!--<item>system</item>-->
+        <!--<item>operating system</item>-->
+        <!--<item>browser</item>-->
+        <!--<item>website</item>-->
+        <!--<item>app</item>-->
+        <!--<item>web app</item>-->
+        <!--<item>tool</item>-->
+        <!--<item>social media platform</item>-->
+        <!--<item>solution</item>-->
+        <!--<item>database</item>-->
+    <!--</string-array>-->
 
-    <string-array name="languages">
-        <item>Python</item>
-        <item>Java</item>
-        <item>Javascript</item>
-        <item>C</item>
-        <item>HTML</item>
-        <item>Ruby</item>
-        <item>C#</item>
-        <item>Visual Basic</item>
-        <item>Go</item>
-        <item>R</item>
-        <item>PHP</item>
-        <item>C++</item>
-        <item>assembly language</item>
-        <item>binary</item>
-    </string-array>
+    <!--<string-array name="languages">-->
+        <!--<item>Python</item>-->
+        <!--<item>Java</item>-->
+        <!--<item>Javascript</item>-->
+        <!--<item>C</item>-->
+        <!--<item>HTML</item>-->
+        <!--<item>Ruby</item>-->
+        <!--<item>C#</item>-->
+        <!--<item>Visual Basic</item>-->
+        <!--<item>Go</item>-->
+        <!--<item>R</item>-->
+        <!--<item>PHP</item>-->
+        <!--<item>C++</item>-->
+        <!--<item>assembly language</item>-->
+        <!--<item>binary</item>-->
+    <!--</string-array>-->
 
-    <string-array name="platforms">
-        <item>robots</item>
-        <item>Raspberry Pi</item>
-        <item>tablets</item>
-        <item>PCs</item>
-        <item>MacOS</item>
-        <item>iPhones</item>
-        <item>Android</item>
-        <item>Samsung smart fridges</item>
-        <item>self driving cars</item>
-        <item>smart TVs</item>
-        <item>Google home devices</item>
-        <item>Kindles</item>
-        <item>smart watches</item>
-        <item>the Oculus rift</item>
-        <item>Playstation</item>
-    </string-array>
+    <!--<string-array name="platforms">-->
+        <!--<item>robots</item>-->
+        <!--<item>Raspberry Pi</item>-->
+        <!--<item>tablets</item>-->
+        <!--<item>PCs</item>-->
+        <!--<item>MacOS</item>-->
+        <!--<item>iPhones</item>-->
+        <!--<item>Android</item>-->
+        <!--<item>Samsung smart fridges</item>-->
+        <!--<item>self driving cars</item>-->
+        <!--<item>smart TVs</item>-->
+        <!--<item>Google home devices</item>-->
+        <!--<item>Kindles</item>-->
+        <!--<item>smart watches</item>-->
+        <!--<item>the Oculus rift</item>-->
+        <!--<item>Playstation</item>-->
+    <!--</string-array>-->
 
 </resources>
