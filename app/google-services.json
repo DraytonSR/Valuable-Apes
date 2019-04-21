@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "283525216141",
+    "firebase_url": "https://the-next-1fcb0.firebaseio.com",
+    "project_id": "the-next-1fcb0",
+    "storage_bucket": "the-next-1fcb0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:283525216141:android:3714e086b31c9581",
+        "android_client_info": {
+          "package_name": "com.mad.thenext"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "283525216141-dg4910lau3sfg5269hp6bil3q4jjg4b6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mad.thenext",
+            "certificate_hash": "7a587d767dbed29ed7ebe91c6f6240003a05ce8f"
+          }
+        },
+        {
+          "client_id": "283525216141-8s1v5p7uk0kkt80lhmm921geak0n87fv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQpK0O1LxN247YR_2WNvc42urjRRGrWmU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "283525216141-8s1v5p7uk0kkt80lhmm921geak0n87fv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
