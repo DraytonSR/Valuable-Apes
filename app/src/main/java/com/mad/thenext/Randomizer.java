@@ -39,9 +39,6 @@ public class Randomizer extends AppCompatActivity {
     String message;
     String buzzword;
 
-    FirebaseFirestore mFirestore;
-    Map data;
-
     final Random rand = new Random();
 
     @Override
@@ -49,47 +46,21 @@ public class Randomizer extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_randomizer);
 
+        Intent intent = getIntent();
+        if (null != intent) {
+            adjectives = intent.getStringArrayListExtra("adjectives");
+            Log.v("Words", adjectives.toString());
+            buzzwords = intent.getStringArrayListExtra("buzzwords");
+            nouns = intent.getStringArrayListExtra("nouns");
+            languages = intent.getStringArrayListExtra("languages");
+            platforms = intent.getStringArrayListExtra("platforms");
+            big_tech_things = intent.getStringArrayListExtra("big_tech_things");
+        }
+
 
         big_tech_thing_text = findViewById(R.id.big_tech_thing);
         the_thing = findViewById(R.id.the_thing);
         randomize_button = findViewById(R.id.randomize);
-
-        randomize_button.setEnabled(false);
-
-        FirebaseApp.initializeApp(getApplicationContext());
-        mFirestore = FirebaseFirestore.getInstance();
-
-        mFirestore.collection("phrases")
-                .get()
-                .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
-                    @Override
-                    public void onComplete(@NonNull Task<QuerySnapshot> task) {
-                        if (task.isSuccessful()) {
-                            for (QueryDocumentSnapshot document : task.getResult()) {
-                                data = document.getData();
-
-                                try {
-                                    adjectives = (ArrayList<String>) data.get("adjectives");
-                                    buzzwords = (ArrayList<String>) data.get("buzzwords");
-                                    nouns = (ArrayList<String>) data.get("nouns");
-                                    languages = (ArrayList<String>) data.get("languages");
-                                    platforms = (ArrayList<String>) data.get("platforms");
-                                    big_tech_things = (ArrayList<String>) data.get("big_tech_things");
-
-                                    randomize_button.setEnabled(true);
-                                } catch (Exception e){
-                                    Log.d("EXCEPTION", e.getMessage());
-                                }
-
-                                Log.d("SUCCESS", document.getId() + " => " + document.getData());
-                                Toast.makeText(Randomizer.this, "Ready!", Toast.LENGTH_SHORT).show();
-                            }
-                        } else {
-                            Log.w("ERROR", "Error getting documents.", task.getException());
-                        }
-                    }
-                });
-
 
 
         randomize_button.setOnClickListener(new View.OnClickListener() {
