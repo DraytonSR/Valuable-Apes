@@ -32,9 +32,9 @@
 
     <Button
         android:id="@+id/randomize"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
+        android:layout_width="179dp"
+        android:layout_height="177dp"
+        android:layout_marginBottom="36dp"
         android:background="@drawable/round_btn"
         android:text="@string/randomize_button"
         android:textColor="@color/highlight"
@@ -49,7 +49,7 @@
         android:id="@+id/the_thing"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="176dp"
         android:clickable="true"
         android:focusable="true"
         android:gravity="center"
