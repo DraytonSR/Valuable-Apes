@@ -25,7 +25,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Random;
 
-public class Randomizer extends AppCompatActivity {
+public class Seriousizer extends AppCompatActivity {
     ArrayList<String> big_tech_things;
     ArrayList<String> adjectives;
     ArrayList<String> buzzwords;
@@ -33,18 +33,12 @@ public class Randomizer extends AppCompatActivity {
     ArrayList<String> languages;
     ArrayList<String> platforms;
 
-    //For Serious Mode
+    //For Silly Mode
     FirebaseFirestore mFirestore;
     Map data;
-    //ArrayList<String> serious_big_tech_things;
-    //ArrayList<String> serious_adjectives;
-    //ArrayList<String> serious_buzzwords;
-    //ArrayList<String> serious_nouns;
-    //ArrayList<String> serious_languages;
-    //ArrayList<String> serious_platforms;
 
-    Button randomize_button;
-    Button serious_button;
+    Button serious_randomize_button;
+    Button silly_button;
     TextView big_tech_thing_text;
     TextView the_thing;
     String message;
@@ -55,7 +49,7 @@ public class Randomizer extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_randomizer);
+        setContentView(R.layout.activity_seriousizer);
 
         Intent intent = getIntent();
         if (null != intent) {
@@ -71,8 +65,9 @@ public class Randomizer extends AppCompatActivity {
 
         big_tech_thing_text = findViewById(R.id.big_tech_thing);
         the_thing = findViewById(R.id.the_thing);
-        randomize_button = findViewById(R.id.randomize);
-//SERIOUS MODE -------------------------------------------------------------------------------------
+        serious_randomize_button = findViewById(R.id.seriousize);
+
+//SILLY MODE ---------------------------------------------------------------------------------------
         FirebaseApp.initializeApp(getApplicationContext());
         mFirestore = FirebaseFirestore.getInstance();
 
@@ -103,14 +98,12 @@ public class Randomizer extends AppCompatActivity {
                         }
                     }
                 });
-
-
-        serious_button = findViewById(R.id.serious);
-        serious_button.setOnClickListener(new View.OnClickListener() {
+        silly_button = findViewById(R.id.silly);
+        silly_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(Randomizer.this, "SERIOUS MODE: E N G A G E D", Toast.LENGTH_SHORT).show();
-                Intent i = new Intent(getApplicationContext(), Seriousizer.class);
+                Toast.makeText(Seriousizer.this, "sIlLy MoDe: Re-EnGaGeD", Toast.LENGTH_SHORT).show();
+                Intent i = new Intent(getApplicationContext(), Randomizer.class);
                 i.putStringArrayListExtra("adjectives", adjectives);
                 i.putStringArrayListExtra("buzzwords", buzzwords);
                 i.putStringArrayListExtra("nouns", nouns);
@@ -121,9 +114,10 @@ public class Randomizer extends AppCompatActivity {
                 startActivity(i);
             }
         });
-//END SERIOUS MODE ---------------------------------------------------------------------------------
+//END SILLY MODE -----------------------------------------------------------------------------------
 
-        randomize_button.setOnClickListener(new View.OnClickListener() {
+
+        serious_randomize_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String adjective = adjectives.get(rand.nextInt(adjectives.size()));

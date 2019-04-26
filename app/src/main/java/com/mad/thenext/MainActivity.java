@@ -74,7 +74,6 @@ public class MainActivity extends AppCompatActivity {
                     }
                 });
 
-
         swipe.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent i = new Intent(getApplicationContext(), Randomizer.class);

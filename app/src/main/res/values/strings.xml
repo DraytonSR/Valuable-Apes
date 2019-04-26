@@ -9,6 +9,9 @@
     <string name="the_next">The Next</string>
     <string name="big_tech_thing">______________:</string>
     <string name="randomize_button">Randomize</string>
+    <string name="serious_randomize_button">SERIOUS</string>
+    <string name="serious_button">Serious Mode</string>
+    <string name="silly_button">Silly Mode</string>
     <string name="colon">:</string>
     <string name="the_thing">%s %s %s, written in %s for %s</string>
     <string name="the_thing_default">A ________ ________ ________, written in ________ for ________</string>
