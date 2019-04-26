@@ -45,6 +45,7 @@ public class Randomizer extends AppCompatActivity {
 
     Button randomize_button;
     Button serious_button;
+    Button save_button;
     TextView big_tech_thing_text;
     TextView the_thing;
     String message;
@@ -109,7 +110,7 @@ public class Randomizer extends AppCompatActivity {
         serious_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(Randomizer.this, "SERIOUS MODE: E N G A G E D", Toast.LENGTH_SHORT).show();
+                Toast.makeText(Randomizer.this, "SERIOUS MODE: E N G A G E D", Toast.LENGTH_LONG).show();
                 Intent i = new Intent(getApplicationContext(), Seriousizer.class);
                 i.putStringArrayListExtra("adjectives", adjectives);
                 i.putStringArrayListExtra("buzzwords", buzzwords);
@@ -122,6 +123,16 @@ public class Randomizer extends AppCompatActivity {
             }
         });
 //END SERIOUS MODE ---------------------------------------------------------------------------------
+//SAVE BUTTON --------------------------------------------------------------------------------------
+        save_button = findViewById(R.id.save);
+        save_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(Randomizer.this, "Saved!", Toast.LENGTH_SHORT).show();
+
+            }
+        });
+//END SAVE BUTTON ----------------------------------------------------------------------------------
 
         randomize_button.setOnClickListener(new View.OnClickListener() {
             @Override
