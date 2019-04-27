@@ -26,6 +26,16 @@ import java.util.Map;
 import java.util.Random;
 
 public class Seriousizer extends AppCompatActivity {
+    ArrayList<String> serious_big_tech_things;
+    ArrayList<String> serious_adjectives;
+    ArrayList<String> serious_buzzwords;
+    ArrayList<String> serious_nouns;
+    ArrayList<String> serious_languages;
+    ArrayList<String> serious_platforms;
+
+    //For Silly Mode
+    FirebaseFirestore mFirestore;
+    Map data;
     ArrayList<String> big_tech_things;
     ArrayList<String> adjectives;
     ArrayList<String> buzzwords;
@@ -33,17 +43,13 @@ public class Seriousizer extends AppCompatActivity {
     ArrayList<String> languages;
     ArrayList<String> platforms;
 
-    //For Silly Mode
-    FirebaseFirestore mFirestore;
-    Map data;
-
     Button serious_randomize_button;
     Button silly_button;
     Button save_button;
-    TextView big_tech_thing_text;
-    TextView the_thing;
-    String message;
-    String buzzword;
+    TextView serious_big_tech_thing_text;
+    TextView serious_the_thing;
+    String serious_message;
+    String serious_buzzword;
 
     final Random rand = new Random();
 
@@ -54,25 +60,25 @@ public class Seriousizer extends AppCompatActivity {
 
         Intent intent = getIntent();
         if (null != intent) {
-            adjectives = intent.getStringArrayListExtra("adjectives");
-            Log.v("Words", adjectives.toString());
-            buzzwords = intent.getStringArrayListExtra("buzzwords");
-            nouns = intent.getStringArrayListExtra("nouns");
-            languages = intent.getStringArrayListExtra("languages");
-            platforms = intent.getStringArrayListExtra("platforms");
-            big_tech_things = intent.getStringArrayListExtra("big_tech_things");
+            serious_adjectives = intent.getStringArrayListExtra("serious_adjectives");
+            //Log.v("Words", serious_adjectives.toString());
+            serious_buzzwords = intent.getStringArrayListExtra("serious_buzzwords");
+            serious_nouns = intent.getStringArrayListExtra("serious_nouns");
+            serious_languages = intent.getStringArrayListExtra("serious_languages");
+            serious_platforms = intent.getStringArrayListExtra("serious_platforms");
+            serious_big_tech_things = intent.getStringArrayListExtra("serious_big_tech_things");
         }
 
 
-        big_tech_thing_text = findViewById(R.id.big_tech_thing);
-        the_thing = findViewById(R.id.the_thing);
+        serious_big_tech_thing_text = findViewById(R.id.serious_big_tech_thing);
+        serious_the_thing = findViewById(R.id.serious_the_thing);
         serious_randomize_button = findViewById(R.id.seriousize);
 
 //SILLY MODE ---------------------------------------------------------------------------------------
         FirebaseApp.initializeApp(getApplicationContext());
         mFirestore = FirebaseFirestore.getInstance();
 
-        mFirestore.collection("serious_phrases")
+        mFirestore.collection("phrases")
                 .get()
                 .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
                     @Override
@@ -130,45 +136,35 @@ public class Seriousizer extends AppCompatActivity {
         serious_randomize_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String adjective = adjectives.get(rand.nextInt(adjectives.size()));
-                buzzword = buzzwords.get(rand.nextInt(buzzwords.size()));
-                String noun = nouns.get(rand.nextInt(nouns.size()));
-                String language = languages.get(rand.nextInt(languages.size()));
-                String platform = platforms.get(rand.nextInt(platforms.size()));
+                String serious_adjective = serious_adjectives.get(rand.nextInt(serious_adjectives.size()));
+                serious_buzzword = serious_buzzwords.get(rand.nextInt(serious_buzzwords.size()));
+                String serious_noun = serious_nouns.get(rand.nextInt(serious_nouns.size()));
+                String serious_language = serious_languages.get(rand.nextInt(serious_languages.size()));
+                String serious_platform = serious_platforms.get(rand.nextInt(serious_platforms.size()));
+                String serious_big_tech_thing = serious_big_tech_things.get(rand.nextInt(serious_big_tech_things.size()));
+                serious_big_tech_thing_text.setText(serious_big_tech_thing + getResources().getString(R.string.colon));
 
-                String big_tech_thing = big_tech_things.get(rand.nextInt(big_tech_things.size()));
-                big_tech_thing_text.setText(big_tech_thing + getResources().getString(R.string.colon));
+                serious_message = getResources().getString(R.string.serious_the_thing, serious_adjective, serious_buzzword, serious_noun, serious_language, serious_platform);
 
-                message = getResources().getString(R.string.the_thing, adjective, buzzword, noun, language, platform);
-
-                the_thing.setText(message);
+                serious_the_thing.setText(serious_message);
 
             }
         });
-        the_thing.setOnClickListener(new View.OnClickListener() {
+        /*serious_the_thing.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Intent.ACTION_WEB_SEARCH);
-                intent.putExtra(SearchManager.QUERY, getResources().getString(R.string.memes, buzzword)); // query contains search string
+                intent.putExtra(SearchManager.QUERY, getResources().getString(R.string.jobs, serious_buzzword)); // query contains search string
                 startActivity(intent);
             }
         });
-        the_thing.setOnLongClickListener(new View.OnLongClickListener() {
-            @Override
-            public boolean onLongClick(View v) {
-                Intent intent = new Intent(Intent.ACTION_WEB_SEARCH);
-                intent.putExtra(SearchManager.QUERY, getResources().getString(R.string.jobs, buzzword)); // query contains search string
-                startActivity(intent);
-                return false;
-            }
-        });
-        big_tech_thing_text.setOnClickListener(new View.OnClickListener() {
+        serious_big_tech_thing_text.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Intent.ACTION_WEB_SEARCH);
-                intent.putExtra(SearchManager.QUERY, getResources().getString(R.string.news, big_tech_thing_text.getText().toString())); // query contains search string
+                intent.putExtra(SearchManager.QUERY, getResources().getString(R.string.news, serious_big_tech_thing_text.getText().toString())); // query contains search string
                 startActivity(intent);
             }
-        });
+        });*/
     }
 }

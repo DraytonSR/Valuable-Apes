@@ -19,7 +19,7 @@
         android:backgroundTint="@android:color/holo_orange_dark"
         android:text="@string/serious_button"
         android:textColor="@color/highlight"
-        android:textSize="12sp"
+        android:textSize="11sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.175"

@@ -61,12 +61,12 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/big_tech_thing"
+        android:id="@+id/serious_big_tech_thing"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="52dp"
         android:gravity="center"
-        android:text="@string/big_tech_thing"
+        android:text="@string/serious_big_tech_thing"
         android:textSize="@dimen/sub_title"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -89,7 +89,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/the_thing"
+        android:id="@+id/serious_the_thing"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="176dp"

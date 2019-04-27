@@ -35,13 +35,13 @@ public class Randomizer extends AppCompatActivity {
 
     //For Serious Mode
     FirebaseFirestore mFirestore;
-    Map data;
-    //ArrayList<String> serious_big_tech_things;
-    //ArrayList<String> serious_adjectives;
-    //ArrayList<String> serious_buzzwords;
-    //ArrayList<String> serious_nouns;
-    //ArrayList<String> serious_languages;
-    //ArrayList<String> serious_platforms;
+    Map seriousData;
+    ArrayList<String> serious_big_tech_things;
+    ArrayList<String> serious_adjectives;
+    ArrayList<String> serious_buzzwords;
+    ArrayList<String> serious_nouns;
+    ArrayList<String> serious_languages;
+    ArrayList<String> serious_platforms;
 
     Button randomize_button;
     Button serious_button;
@@ -61,7 +61,7 @@ public class Randomizer extends AppCompatActivity {
         Intent intent = getIntent();
         if (null != intent) {
             adjectives = intent.getStringArrayListExtra("adjectives");
-            Log.v("Words", adjectives.toString());
+            //Log.v("Words", adjectives.toString());
             buzzwords = intent.getStringArrayListExtra("buzzwords");
             nouns = intent.getStringArrayListExtra("nouns");
             languages = intent.getStringArrayListExtra("languages");
@@ -84,15 +84,15 @@ public class Randomizer extends AppCompatActivity {
                     public void onComplete(@NonNull Task<QuerySnapshot> task) {
                         if (task.isSuccessful()) {
                             for (QueryDocumentSnapshot document : task.getResult()) {
-                                data = document.getData();
+                                seriousData = document.getData();
 
                                 try {
-                                    adjectives = (ArrayList<String>) data.get("adjectives");
-                                    buzzwords = (ArrayList<String>) data.get("buzzwords");
-                                    nouns = (ArrayList<String>) data.get("nouns");
-                                    languages = (ArrayList<String>) data.get("languages");
-                                    platforms = (ArrayList<String>) data.get("platforms");
-                                    big_tech_things = (ArrayList<String>) data.get("big_tech_things");
+                                    serious_adjectives = (ArrayList<String>) seriousData.get("serious_adjectives");
+                                    serious_buzzwords = (ArrayList<String>) seriousData.get("serious_buzzwords");
+                                    serious_nouns = (ArrayList<String>) seriousData.get("serious_nouns");
+                                    serious_languages = (ArrayList<String>) seriousData.get("serious_languages");
+                                    serious_platforms = (ArrayList<String>) seriousData.get("serious_platforms");
+                                    serious_big_tech_things = (ArrayList<String>) seriousData.get("serious_big_tech_things");
                                 } catch (Exception e){
                                     Log.d("EXCEPTION", e.getMessage());
                                 }
@@ -112,12 +112,12 @@ public class Randomizer extends AppCompatActivity {
             public void onClick(View v) {
                 Toast.makeText(Randomizer.this, "SERIOUS MODE: E N G A G E D", Toast.LENGTH_LONG).show();
                 Intent i = new Intent(getApplicationContext(), Seriousizer.class);
-                i.putStringArrayListExtra("adjectives", adjectives);
-                i.putStringArrayListExtra("buzzwords", buzzwords);
-                i.putStringArrayListExtra("nouns", nouns);
-                i.putStringArrayListExtra("languages", languages);
-                i.putStringArrayListExtra("platforms", platforms);
-                i.putStringArrayListExtra("big_tech_things", big_tech_things);
+                i.putStringArrayListExtra("serious_adjectives", serious_adjectives);
+                i.putStringArrayListExtra("serious_buzzwords", serious_buzzwords);
+                i.putStringArrayListExtra("serious_nouns", serious_nouns);
+                i.putStringArrayListExtra("serious_languages", serious_languages);
+                i.putStringArrayListExtra("serious_platforms", serious_platforms);
+                i.putStringArrayListExtra("serious_big_tech_things", serious_big_tech_things);
 
                 startActivity(i);
             }
