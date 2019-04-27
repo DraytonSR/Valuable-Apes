@@ -14,6 +14,7 @@
     <string name="serious_button">Serious Mode</string>
     <string name="silly_button">Silly Mode</string>
     <string name="save_button">Save</string>
+    <string name="i_button">Save</string>
     <string name="colon">:</string>
     <string name="the_thing">%s %s %s, written in %s for %s</string>
     <string name="serious_the_thing">%s %s %s, written in %s for %s</string>

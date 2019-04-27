@@ -46,6 +46,7 @@ public class Randomizer extends AppCompatActivity {
     Button randomize_button;
     Button serious_button;
     Button save_button;
+    Button i_button;
     TextView big_tech_thing_text;
     TextView the_thing;
     String message;
@@ -133,6 +134,18 @@ public class Randomizer extends AppCompatActivity {
             }
         });
 //END SAVE BUTTON ----------------------------------------------------------------------------------
+
+//info button
+        i_button = findViewById(R.id.i);
+        i_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(Randomizer.this, "Tap on 'The Next __' to search related news", Toast.LENGTH_LONG).show();
+                Toast.makeText(Randomizer.this, "Tap on the buzzword to search for some related spicy memes", Toast.LENGTH_LONG).show();
+                Toast.makeText(Randomizer.this, "Long press on the buzzword for related jobs", Toast.LENGTH_LONG).show();
+
+            }
+        });
 
         randomize_button.setOnClickListener(new View.OnClickListener() {
             @Override

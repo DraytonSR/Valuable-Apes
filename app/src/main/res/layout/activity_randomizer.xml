@@ -48,6 +48,20 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
 
+    <Button
+        android:id="@+id/i"
+        android:layout_width="34dp"
+        android:layout_height="30dp"
+
+        android:background="@drawable/round_btn"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:text="i"
+        android:textAllCaps="false"
+        android:textColor="@color/highlight"
+        android:textSize="12sp"
+        tools:layout_editor_absoluteX="21dp"
+        tools:layout_editor_absoluteY="16dp" />
+
     <TextView
         android:id="@+id/the_next"
         android:layout_width="0dp"
