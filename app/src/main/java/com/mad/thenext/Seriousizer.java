@@ -18,9 +18,11 @@ import com.google.firebase.FirebaseApp;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
+import com.google.firebase.firestore.SetOptions;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Random;
@@ -128,6 +130,12 @@ public class Seriousizer extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Toast.makeText(Seriousizer.this, "Saved!", Toast.LENGTH_SHORT).show();
+                if (serious_message != null){
+                    Map<String, String> toSave = new HashMap<>();
+                    toSave.put(serious_message, "savedSRS");
+                    mFirestore.collection("saved").document("saved")
+                            .set(toSave, SetOptions.merge());
+                }
 
             }
         });
